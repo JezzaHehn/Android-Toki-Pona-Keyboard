@@ -4,17 +4,16 @@ import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.text.TextUtils;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
 
 
-public class FullIMS extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
+public class SwipeIMS extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
     @Override
     public View onCreateInputView() {
         KeyboardView keyboardView = (KeyboardView) getLayoutInflater().inflate(R.layout.keyboard_view, null);
-        Keyboard keyboard = new Keyboard(this, R.xml.toki_pad_full);
+        Keyboard keyboard = new Keyboard(this, R.xml.toki_pad_swipe);
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(this);
         return keyboardView;
@@ -60,21 +59,25 @@ public class FullIMS extends InputMethodService implements KeyboardView.OnKeyboa
 
     @Override
     public void swipeLeft() {
-
+//        InputConnection inputConnection = getCurrentInputConnection();
+//        if (inputConnection != null) inputConnection.commitText("i", 1);
     }
 
     @Override
     public void swipeRight() {
-
+//        InputConnection inputConnection = getCurrentInputConnection();
+//        if (inputConnection != null) inputConnection.commitText("e", 1);
     }
 
     @Override
     public void swipeDown() {
-
+//        InputConnection inputConnection = getCurrentInputConnection();
+//        if (inputConnection != null) inputConnection.commitText("o", 1);
     }
 
     @Override
     public void swipeUp() {
-
+//        InputConnection inputConnection = getCurrentInputConnection();
+//        if (inputConnection != null) inputConnection.commitText("u", 1);
     }
 }

@@ -38,15 +38,19 @@
     </Row>
 
     <Row>
-        <Key android:codes="-2"
-            android:keyLabel="123"
+        <Key android:codes="49,50"
+            android:keyLabel="1 2"
             android:keyWidth="15%p"
             android:keyEdgeFlags="left"/>
         <Key android:codes="32"
             android:keyLabel="@string/space"
-            android:keyWidth="80%p"/>
-        <Key android:codes="46,44"
-            android:keyLabel=". ,"
+            android:keyWidth="65%p"/>
+        <Key android:codes="46,44,39,34"
+            android:keyLabel=".,'"
+            android:keyWidth="10%p"/>
+        <Key android:codes="63,33,58,59,45"
+            android:keyLabel="\?!:;-"
+            android:keyWidth="10%p"
             android:keyEdgeFlags="right"/>
     </Row>
 
