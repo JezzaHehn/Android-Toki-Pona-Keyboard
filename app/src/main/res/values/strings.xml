@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Toki Pona Keyboard</string>
+    <string name="label_subtype_swipe">Toki Pona (swipe)</string>
+    <string name="label_subtype_full">Toki Pona (full)</string>
+    <string name="space">SPACE</string>
+    <string name="enter">ENTER</string>
+    <string name="delete">DEL</string>
+    <string name="done">DONE</string>
+</resources>
